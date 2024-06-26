@@ -1,0 +1,20 @@
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:39:45.964Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:39:45.967Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-26T20:39:45.967Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-26T20:39:45.968Z"}
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:40:19.439Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:40:19.442Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-26T20:40:19.442Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-26T20:40:19.443Z"}
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:42:32.197Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:42:32.200Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-26T20:42:32.200Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-26T20:42:32.201Z"}
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:48:21.893Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:48:21.895Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-26T20:48:21.896Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-26T20:48:21.896Z"}
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.726Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.729Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.729Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.730Z"}
