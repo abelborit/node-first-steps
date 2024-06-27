@@ -8,3 +8,9 @@
 {"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-26T20:48:21.896Z"}
 {"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.729Z"}
 {"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.730Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-27T18:51:29.518Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-27T18:51:29.519Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:18.193Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:18.194Z"}
+{"level":"error","message":"error Error desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:24.811Z"}
+{"level":"error","message":"error OtroError desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:24.812Z"}
