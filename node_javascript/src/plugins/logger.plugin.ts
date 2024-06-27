@@ -1,4 +1,4 @@
-const { createLogger, format, transports } = require("winston");
+import { createLogger, format, transports } from "winston";
 const { combine, timestamp, json } = format;
 
 /* https://betterstack.com/community/guides/logging/how-to-install-setup-and-use-winston-and-morgan-to-log-node-js-applications/#configuring-transports-in-winston */
@@ -41,12 +41,17 @@ logger.add(
   })
 );
 
-module.exports = function buildLogger(service) {
+interface BuildLoggerInterface {
+  log: (message: string) => void;
+  error: (message: string) => void;
+}
+
+export const buildLogger = (service: string): BuildLoggerInterface => {
   return {
-    log: (message) => {
+    log: (message: string): void => {
       logger.log("info", { message, service });
     },
-    error: (message) => {
+    error: (message: string): void => {
       logger.error("error", { message, service });
     },
   };

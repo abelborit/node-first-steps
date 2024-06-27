@@ -8,3 +8,9 @@
 {"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:48:21.895Z"}
 {"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.726Z"}
 {"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-26T20:58:34.729Z"}
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-27T18:51:29.516Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-27T18:51:29.518Z"}
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:18.190Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:18.192Z"}
+{"level":"info","message":"Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:24.809Z"}
+{"level":"info","message":"Otro Hola Mundo desde el logger","service":"app.js","timestamp":"2024-06-27T18:57:24.811Z"}
