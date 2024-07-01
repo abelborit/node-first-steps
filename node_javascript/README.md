@@ -49,3 +49,63 @@
 - Para la nota anterior, cabe destacar que actualmente ya no hace falta descagar una librería externa para generar UUID para este ejemplo ya que javascript lo tiene ya por defecto. Simplemente sería colocar `id: crypto.randomUUID()` y ya nos genera un UUID automaticamente sin necesidad de una libreria externa.
 
 ---
+
+# Temas puntuales de la sección (parte III)
+
+### ¿Qué veremos en esta sección?
+
+- En esta sección habrán generalidades de Node y a la vez, se explicarán ciertos conceptos de JavaScript que son necesarios para casi cualquier aplicación de Node.
+
+- Puntualmente veremos:
+  - ¿Qué es el testing automático?
+  - ¿Por qué es importante?
+  - Jest testing library
+  - Configuraciones Node + TS + Jest
+  - Pruebas en todos los archivos realizados en la sección anterior
+  - Coverage - Cobertura  del testing
+
+### \* PASOS A REALIZAR:
+
+1. 
+2. 
+3. 
+
+### \* RECURSOS A USAR:
+
+- 
+- 
+- 
+
+### \* NOTAS:
+
+- Características de las pruebas:
+  - Fáciles de escribir
+  - Fáciles de leer
+  - Confiables
+  - Rápidas
+  - Principalmente, que sean unitarias
+
+- Usualmente está la terminología y/o pasos del AAA
+  - **Arrange (Arreglar)**
+    - Preparar el estado inicial para el sujeto de pruebas
+      - Inicializar variables
+      - Importaciones necesarias
+  - **Act (Actuar)**
+    - Aplicamos acciones o estímulos
+      - Llamar métodos
+      - Simular Clicks
+      - Realizar acciones y/o evaluaciones sobre el paso anterior
+  - **Assert (Afirmar)**
+    - Observar el comportamiento resultante
+      - ¿Son los resultados esperados?
+
+- Puede ser que salga este error o algo similar en el que diga que `el archivo de jest.config.ts está fuera del rootDir de TypeScript Config`, lo cual está bien, y es normal, ya que usamos TS-Jest, no hace falta transpilar nada de Jest con TypeScript, sin embargo el error es molesto, y podemos añadir esta configuración justo antes del compilerOptions (o después del mismo, da igual)
+
+  ```js
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts","**/*.test.ts"],
+    "compilerOptions": {
+      /* Visit https://aka.ms/tsconfig to read more about this file */
+  ```
+
+  -  Pero con lo anteriro puede ser que en nuestros archivos de .test.ts salga que no encuentra algunas funciones de jest, entonces bastaría con solo importarlas
