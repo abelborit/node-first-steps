@@ -16,14 +16,23 @@ exports.httpClientPlugin = void 0;
 const axios_1 = __importDefault(require("axios"));
 exports.httpClientPlugin = {
     get: (url) => __awaiter(void 0, void 0, void 0, function* () {
+        /* Async / Await y axios */
         const { data } = yield axios_1.default.get(url);
         return data;
+        /* Async / Await */
         // const resp = await fetch(url);
         // return await resp.json();
     }),
-    post: (url, body) => __awaiter(void 0, void 0, void 0, function* () { }),
-    put: (url, body) => __awaiter(void 0, void 0, void 0, function* () { }),
-    delete: (url) => __awaiter(void 0, void 0, void 0, function* () { }),
+    /* como aún no se tiene un cuerpo en las funciones entonces se pueden comentar o sino colocar un error de que no está implementado aún */
+    post: (url, body) => __awaiter(void 0, void 0, void 0, function* () {
+        throw new Error("Not implemented yet");
+    }),
+    put: (url, body) => __awaiter(void 0, void 0, void 0, function* () {
+        throw new Error("Not implemented yet");
+    }),
+    delete: (url) => __awaiter(void 0, void 0, void 0, function* () {
+        throw new Error("Not implemented yet");
+    }),
 };
 /*
 El uso de una clase para implementar el patrón adaptador en lugar de un solo objeto como "httpClientPlugin" depende principalmente de la situación y las necesidades del proyecto en particular.
