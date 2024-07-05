@@ -62,23 +62,24 @@
   - Jest testing library
   - Configuraciones Node + TS + Jest
   - Pruebas en todos los archivos realizados en la sección anterior
-  - Coverage - Cobertura  del testing
+  - Coverage - Cobertura del testing
 
 ### \* PASOS A REALIZAR:
 
-1. 
-2. 
-3. 
+1. ejemplo
+2. ejemplo
+3. ejemplo
 
 ### \* RECURSOS A USAR:
 
-- 
-- 
-- 
+- ejemplo
+- ejemplo
+- ejemplo
 
 ### \* NOTAS:
 
 - Características de las pruebas:
+
   - Fáciles de escribir
   - Fáciles de leer
   - Confiables
@@ -86,6 +87,7 @@
   - Principalmente, que sean unitarias
 
 - Usualmente está la terminología y/o pasos del AAA
+
   - **Arrange (Arreglar)**
     - Preparar el estado inicial para el sujeto de pruebas
       - Inicializar variables
@@ -108,4 +110,19 @@
       /* Visit https://aka.ms/tsconfig to read more about this file */
   ```
 
-  -  Pero con lo anteriro puede ser que en nuestros archivos de .test.ts salga que no encuentra algunas funciones de jest, entonces bastaría con solo importarlas
+  - Pero con lo anteriro puede ser que en nuestros archivos de .test.ts salga que no encuentra algunas funciones de jest, entonces bastaría con solo importarlas
+
+- ¿Cuándo se utiliza el require y cuando el import? Por ejemplo hay estas dos formas de importar:
+
+  ```js
+  import { emailTemplate } from "../../src/js-foundation/01-template";
+  const { emailTemplate } = require("../../src/js-foundation/01-template");
+  ```
+
+  - En este caso se utiliza import en lugar de require porque no estamos utilizando Node en su forma original, sino que estamos utilizando Node con TypeScript y TypeScript nos permite utilizar las características más recientes de ECMAScript, incluyendo la sintaxis import. Por lo que, aunque require es la forma tradicional de importar módulos en Node, cuando inicializamos TypeScript, podemos optar por usar import para una sintaxis más moderna.
+
+- Si el auto-import de Visual Studio Code no funciona para tests pero sin embargo fuera de ellos si funciona, se puede revisar la configuracion del tsconfig ya que al solo incluir src y excluir los archivos de tests dejo de funcionar el auto-import dentro de dichos archivos, asi que simplemente eliminando el `include` y `exclude` ya se solucionaría.
+
+- Excluir archivos de prueba de la compilación en TypeScript:
+
+  - https://bobbyhadz.com/blog/typescript-exclude-test-files-from-compilation

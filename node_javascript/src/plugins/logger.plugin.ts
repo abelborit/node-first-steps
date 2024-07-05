@@ -11,9 +11,9 @@ const infoFilter = format((info, opts) => {
   return info.level === "info" ? info : false;
 });
 
-const logger = createLogger({
+export const logger = createLogger({
   level: "info",
-  // defaultMeta: { service: 'user-service' },
+  // defaultMeta: { service: 'user-service' }, // si se tiene problemas en el test y esta línea está descomentada, entonces en este caso en particular, para que la prueba funcione, ésta línea tiene que estar comentada porque sino el valor de service que se establece en las funciones de log se sobrescribe por un valor por defecto, lo que hace que la prueba no funcione como esperamos
   format: combine(timestamp(), json()),
   transports: [
     //

@@ -2,16 +2,27 @@ import axios from "axios";
 
 export const httpClientPlugin = {
   get: async (url: string) => {
+    /* Async / Await y axios */
     const { data } = await axios.get(url);
     return data;
 
+    /* Async / Await */
     // const resp = await fetch(url);
     // return await resp.json();
   },
 
-  post: async (url: string, body: any) => {},
-  put: async (url: string, body: any) => {},
-  delete: async (url: string) => {},
+  /* como aún no se tiene un cuerpo en las funciones entonces se pueden comentar o sino colocar un error de que no está implementado aún */
+  post: async (url: string, body: any) => {
+    throw new Error("Not implemented yet");
+  },
+
+  put: async (url: string, body: any) => {
+    throw new Error("Not implemented yet");
+  },
+
+  delete: async (url: string) => {
+    throw new Error("Not implemented yet");
+  },
 };
 
 /*
